@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Central de Emergência</title>
+    <title>Dashboard</title>
 </head>
 <body>
-    <h2>Central de Emergência</h2>
-    {% for p in pedidos %}
-        <p>{{ loop.index }}. {{ p.tipo }} - {{ p.nome }} - {{ p.bairro }} | Lat: {{ p.lat }} Lon: {{ p.lon }} | 
-        <a href="/enviar/{{ loop.index0 }}">Encaminhar</a></p>
-    {% endfor %}
+    <h1>📊 Dashboard</h1>
+    <p>Aqui vai o monitoramento central.</p>
+    <a href="/">⬅ Voltar</a>
 </body>
 </html>
