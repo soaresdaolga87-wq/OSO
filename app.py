@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "🚀 API/Servidor Flask ativo no Render! Vá para /pedido ou /dashboard"
+    return render_template("index.html")
 
 @app.route("/pedido")
 def pedido():
@@ -15,4 +15,4 @@ def dashboard():
     return render_template("dashboard.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
